@@ -1,8 +1,11 @@
 import iziToast from "izitoast";
 
+console.log(iziToast);
+
 const formEl = document.querySelector('.form');
 const formStateArr = [...formEl.state];
 let searchResult = null;
+
 
 
 const checkedInput = function(arr){
@@ -28,7 +31,7 @@ const createPromise = function(delay){
   };
 
 formEl.addEventListener('submit',(e)=>{
-    e.preventDefault();
+    e.preventDefault();    
     const delayValue = formEl.elements[0].value;
     createPromise(delayValue, checkedInput(formStateArr))
         .then(result => {
@@ -37,7 +40,7 @@ formEl.addEventListener('submit',(e)=>{
                 message:result
             })            
         })
-        .catch(err => {
+        .catch(err => {           
             iziToast.error({
                 title:'error',
                 message:err
