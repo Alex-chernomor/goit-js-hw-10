@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Home work 10</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="./js/1-timer.js" type="module" defer ></script>
+    <script src="./js/2-snackbar.js" type="module" defer ></script>
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+   
+
+
+      <!-- <ul>
+        <li><a href="./1-timer.html">Timer</a></li>
+        <li><a href="./2-snackbar.html">snckbar</a></li>
+      </ul> -->
+
+      <div class="timer-class">
+        <load src="./1-timer.html" />
+      </div>
+
+      <div class="snckbar-class">
+        <load src="./2-snackbar.html" />
+
+      </div>
+
     </main>
-
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
   </body>
 </html>
