@@ -4,7 +4,6 @@
   }
   
   .input-wrapper {
-    display: flex;
     flex-direction: row;
     gap: 8px;
     margin-top: 24px;
@@ -12,20 +11,13 @@
   }
   
   #datetime-picker {
-    border-radius: 4px;
+    border-radius: 10px;
     width: 272px;
     height: 40px;
     border: 1px solid #808080;
     background-color: #f5f5f5;
     padding: 8px 16px;
     font-size: 20px;
-    
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
-  #datetime-picker:active {
-    border-color: #4e75ff;
   }
   
   #start-button {

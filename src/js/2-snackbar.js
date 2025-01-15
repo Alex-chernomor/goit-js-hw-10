@@ -1,6 +1,5 @@
 import iziToast from "izitoast";
 
-console.log(iziToast);
 
 const formEl = document.querySelector('.form');
 const formStateArr = [...formEl.state];
